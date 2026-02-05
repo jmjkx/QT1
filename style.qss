@@ -1,0 +1,209 @@
+QWidget {
+    background-color: #f0f0f0;
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+    color: #333333;
+}
+
+/* 顶部 Tab 样式 */
+QTabWidget::pane {
+    border-top: 2px solid #e0e0e0;
+    position: absolute;
+    top: -2px;
+}
+
+QTabWidget::tab-bar {
+    alignment: left;
+}
+
+QTabBar::tab {
+    background: transparent;
+    padding: 8px 20px;
+    margin-bottom: 2px;
+    color: #666666;
+    font-weight: bold;
+}
+
+QTabBar::tab:hover {
+    color: #000000;
+}
+
+QTabBar::tab:selected {
+    color: #000000;
+    border-bottom: 2px solid #ff5500;
+}
+
+/* 组框样式 */
+QGroupBox {
+    border: 1px solid #dcdcdc;
+    margin-top: 10px;
+    padding-top: 10px;
+    background-color: #ffffff;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 3px;
+    color: #333333;
+    font-weight: bold;
+    left: 10px;
+}
+
+/* 按钮样式 */
+QPushButton {
+    background-color: #e1e1e1;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 2px;
+}
+
+QPushButton:hover {
+    background-color: #d1d1d1;
+}
+
+/* 输入框和下拉框 */
+QComboBox, QLineEdit {
+    border: 1px solid #cccccc;
+    padding: 2px 5px;
+    background: white;
+    min-height: 22px;
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 20px;
+}
+
+/* 增加减小按钮样式 */
+QPushButton#btnIncLow, QPushButton#btnDecLow,
+QPushButton#btnIncHigh, QPushButton#btnDecHigh {
+    background-color: #f5f5f5;
+    border: 1px solid #cccccc;
+    padding: 2px 5px;
+    font-size: 10px;
+}
+
+QPushButton#btnIncLow:hover, QPushButton#btnDecLow:hover,
+QPushButton#btnIncHigh:hover, QPushButton#btnDecHigh:hover {
+    background-color: #e5e5e5;
+}
+
+QPushButton#btnIncLow:pressed, QPushButton#btnDecLow:pressed,
+QPushButton#btnIncHigh:pressed, QPushButton#btnDecHigh:pressed {
+    background-color: #d5d5d5;
+}
+
+/* 形状工具按钮 */
+QToolButton {
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    border-radius: 2px;
+    font-size: 14px;
+}
+
+QToolButton:hover {
+    background-color: #f5f5f5;
+    border: 1px solid #aaaaaa;
+}
+
+QToolButton:checked {
+    border: 1px solid #ff5500;
+    color: #ff5500;
+    background-color: #fff0e6;
+}
+
+/* 复选框样式 - 开关样式 */
+QCheckBox {
+    spacing: 5px;
+}
+
+QCheckBox::indicator {
+    width: 36px;
+    height: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    background-color: #e0e0e0;
+    position: absolute;
+    left: 0;
+}
+
+QCheckBox::indicator:hover {
+    border: 1px solid #aaaaaa;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #ff5500;
+    border: 1px solid #ff5500;
+}
+
+/* 开关滑块 - 未选中时在左边 */
+QCheckBox::indicator:unchecked {
+    image: none;
+    border: 1px solid #cccccc;
+}
+
+QCheckBox::indicator:unchecked:after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    left: 2px;
+    top: 2px;
+}
+
+/* 开关滑块 - 选中时在右边 */
+QCheckBox::indicator:checked:after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    left: 18px;
+    top: 2px;
+}
+
+/* 单选按钮样式 */
+QRadioButton {
+    spacing: 5px;
+}
+
+QRadioButton::indicator {
+    width: 14px;
+    height: 14px;
+    border: 2px solid #cccccc;
+    border-radius: 7px;
+    background-color: #ffffff;
+}
+
+QRadioButton::indicator:checked {
+    border: 2px solid #ff5500;
+    background-color: #ff5500;
+}
+
+/* 标签样式 */
+QLabel {
+    color: #333333;
+    background-color: transparent;
+}
+
+/* 组框标题文字 */
+QGroupBox::title {
+    color: #333333;
+    background-color: transparent;
+}
+
+/* 单选按钮文字 */
+QRadioButton {
+    color: #333333;
+    background-color: transparent;
+}
+
+/* 复选框文字 */
+QCheckBox {
+    color: #333333;
+    background-color: transparent;
+}
