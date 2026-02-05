@@ -8,7 +8,9 @@ BinarizationDialog::BinarizationDialog(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::BinarizationDialog),
     m_lowValue(100),
-    m_highValue(200)
+    m_highValue(200),
+    m_minValue(0),
+    m_maxValue(255)
 {
     ui->setupUi(this);
 

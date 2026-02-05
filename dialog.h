@@ -38,8 +38,8 @@ private:
     // 值范围
     int m_lowValue;
     int m_highValue;
-    const int m_minValue = 0;
-    const int m_maxValue = 255;
+    const int m_minValue;
+    const int m_maxValue;
 
     // 用于加载QSS样式
     void loadStyle();
